@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(1, 1, 16);
+    color: darkorchid;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 200px;
+    border: 2px solid darkorchid;
+    border-radius: 50%;
+}
+#reloj{
+    color: darkorchid;
+}

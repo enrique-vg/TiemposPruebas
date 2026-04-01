@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(23, 23, 22);
+    color :rgb(220, 160, 31);
+    font-family: Aardvark;
+    /* font-family: Alien Encounters; */
+    /* font-family: Distant Galaxy; */
+    /* font-family: Gobold; */
+    /* font-family: PhrasticMedium; */
+    font-family: DS-Digital; 
+                /* Instalada por mi desde DaFont.
+                Leer Condiciones en el txt guardado y
+                si eso asegurarse Adjuntalo al proyeto para producción*/
+}
+h2{
+    font-family: DS-Digital; /* Instalada por mi desde DaFont.
+                                Leer Condiciones en el txt guardado y
+                                si eso asegurarse Adjuntalo al proyeto para producción*/
+
+    font-size: 2.5em;
+}
+
+/* @font-face {
+    font-family: F16;
+    src: url("../DS-DIGIT.TTF") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
