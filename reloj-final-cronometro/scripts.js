@@ -1,9 +1,7 @@
+function muestraInstante(){
 
-let mensaje = document.querySelector('#HolaMundo');
-mensaje.innerHTML = "HOLA MUNDO";
-
-function tiempoActual(){
     let date = new Date();  
+
     let hh = date.getHours();
     let mm = date.getMinutes();
     let ss = date.getSeconds();
@@ -14,8 +12,9 @@ function tiempoActual(){
 
     let tiempo = hh + ':' +  mm + ':' + ss;
 
-    let reloj = document.querySelector('#reloj');
+    let reloj = document.querySelector('.reloj');
     reloj.innerHTML = tiempo;
 }
 
-setInterval( tiempoActual, 1000);
+setInterval(muestraInstante, 1000);
+

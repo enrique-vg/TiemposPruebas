@@ -41,7 +41,22 @@ cronom.innerHTML = tiempo;
 let cronomet = document.querySelector('#crono');
 cronomet.innerHTML = tiempo;
 
-let cronoAct = document.querySelector('#cronoActualizando');
-cronoAct.innerHTML = setInterval(tiempo, 1000);
+function tiempoActualizado(){
+    let data = new Date();
+    let HH = data.getHours();
+    let MM = data.getMinutes();
+    let SS = data.getSeconds();
+    HH = (HH<10) ? "0" + HH : HH;
+    MM = (MM<10) ? "0" + MM : MM;
+    SS = (SS<10) ? "0" + SS : SS;
+    let tiempo = HH + ":" + MM + ":" + SS;
+    return tiempo;
+}
+
+let cronoAct = document.querySelector('#cronoActualizado');
+cronoAct.innerHTML = tiempoActualizado;
+// cronoAct.innerHTML = setInterval(tiempoActualizado, 1000);
+
+
 
 //  let tiktak = setInterval(tiempo, 1000);
