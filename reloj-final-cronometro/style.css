@@ -10,8 +10,17 @@ body{
                 /* Instalada por mi desde DaFont.
                 Leer Condiciones en el txt guardado y
                 si eso asegurarse Adjuntalo al proyeto para producción*/
-}
+    display: flex;
+    align-items: center;
+    justify-content:center;
 
+}
+div{
+    /* display:inline-block; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
 .reloj{
     height: 200px;
     width: 200px;
