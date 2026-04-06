@@ -1,4 +1,4 @@
-function instante(){
+function muestraInstante(){
 
     let date = new Date();  
 
@@ -10,18 +10,11 @@ function instante(){
     mm = (mm < 10) ? '0' + mm : mm; 
     ss = (ss < 10) ? '0' + ss : ss; 
 
-    let instante = hh + ':' +  mm + ':' + ss;
-
-    return instante;
-}
-
-function muestraInstanteEnReloj(){
-
-    let inst = instante();
+    let tiempo = hh + ':' +  mm + ':' + ss;
 
     let reloj = document.querySelector('.reloj');
-    reloj.innerHTML = inst;
+    reloj.innerHTML = tiempo;
 }
 
-setInterval(muestraInstanteEnReloj, 1000);
+setInterval(muestraInstante, 1000);
 
