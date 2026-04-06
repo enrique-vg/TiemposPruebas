@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divSinFlex {
+            background-color: lightseagreen;
+            /* No tiene flex, por lo que no se centra nada a priori*/
+        }
+        .divConFlex {
+            background-color: lightskyblue;
+            display: flex;
+            /* ¡Ojo! cambia el comportamiento de los hijos */
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .pSinAncho {
+            background-color: red;
+            height: 50px;
+        }
+        .pConAnchoCentrado {
+            background-color: green;
+            height: 50px;
+            width: 200px;
+            margin: 0 auto;
+        }
+        .pConAnchoNoCentrado {
+            background-color: blue;
+            height: 50px;
+            width: 200px;
+            /* No sirve para nada los 3 siguientes */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*Este solo se podría centrar con el
+              display flex al padre*/
+        }
+    </style>
+</head>
+<body>
+    <div class="divSinFlex">
+        <p class="pSinAncho"></p>
+        <p class="pConAnchoCentrado"></p>
+        <p class="pConAnchoNoCentrado"></p>
+    </div>
+    <div class="divConFlex">
+        <p class="pSinAncho"></p>
+        <p class="pConAnchoCentrado"></p>
+        <p class="pConAnchoNoCentrado"></p>
+    </div>
+</body>
+
+</html>
